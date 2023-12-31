@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tabbed Website</title>
+</head>
+<body>
+
+  <div class="tabs">
+    <button onclick="openTab('home')">Home</button>
+    <button onclick="openTab('about')">About</button>
+    <button onclick="openTab('services')">Services</button>
+    <button onclick="openTab('contact')">Contact</button>
+  </div>
+
+  <div id="home" class="tab-content">
+    <h2>Home Content</h2>
+    <p>Welcome to our website! <br><br>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, at esse soluta minima, delectus similique aperiam numquam cupiditate libero, quas eaque reprehenderit. Porro harum in, officia laborum non deleniti cumque. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam pariatur modi, deleniti, eum fugiat nostrum hic delectus error unde, praesentium nesciunt maxime minus repellendus laboriosam! Dolor beatae harum sunt?<br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellat culpa tempore blanditiis ut veritatis necessitatibus, earum ab doloribus fuga, commodi minima quod vero praesentium natus! Dolorem consequuntur aliquid accusamus.<br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, nisi, molestias dicta optio officiis sint aliquid nam dolore eos, voluptate voluptatibus laudantium ut! Quis sapiente architecto, odio vel porro reprehenderit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit id dolore aspernatur? Fuga vero sequi beatae obcaecati sunt sit veritatis? Consequuntur veniam suscipit sint odit est unde quos officia iure? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nobis dolor nemo eius vitae accusamus, a, consequatur, sint provident molestias culpa iusto sunt perspiciatis sit ipsa praesentium neque inventore non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore animi, repellat quaerat unde iure minima officiis numquam, tenetur laborum, ipsa earum ad maiores recusandae quia soluta. Numquam, nam libero.
+    </p>
+  </div>
+
+  <div id="about" class="tab-content">
+    <h2>About Us</h2>
+    <p>Learn more about our company.<br><br>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, at esse soluta minima, delectus similique aperiam numquam cupiditate libero, quas eaque reprehenderit. Porro harum in, officia laborum non deleniti cumque. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam pariatur modi, deleniti, eum fugiat nostrum hic delectus error unde, praesentium nesciunt maxime minus repellendus laboriosam! Dolor beatae harum sunt?<br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellat culpa tempore blanditiis ut veritatis necessitatibus, earum ab doloribus fuga, commodi minima quod vero praesentium natus! Dolorem consequuntur aliquid accusamus.<br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, nisi, molestias dicta optio officiis sint aliquid nam dolore eos, voluptate voluptatibus laudantium ut! Quis sapiente architecto, odio vel porro reprehenderit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit id dolore aspernatur? Fuga vero sequi beatae obcaecati sunt sit veritatis? Consequuntur veniam suscipit sint odit est unde quos officia iure? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nobis dolor nemo eius vitae accusamus, a, consequatur, sint provident molestias culpa iusto sunt perspiciatis sit ipsa praesentium neque inventore non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore animi, repellat quaerat unde iure minima officiis numquam, tenetur laborum, ipsa earum ad maiores recusandae quia soluta. Numquam, nam libero.
+    </p>
+  </div>
+
+  <div id="services" class="tab-content">
+    <h2>Our Services</h2>
+    <p>Explore the services we offer.<br><br>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, at esse soluta minima, delectus similique aperiam numquam cupiditate libero, quas eaque reprehenderit. Porro harum in, officia laborum non deleniti cumque. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam pariatur modi, deleniti, eum fugiat nostrum hic delectus error unde, praesentium nesciunt maxime minus repellendus laboriosam! Dolor beatae harum sunt?<br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellat culpa tempore blanditiis ut veritatis necessitatibus, earum ab doloribus fuga, commodi minima quod vero praesentium natus! Dolorem consequuntur aliquid accusamus.<br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, nisi, molestias dicta optio officiis sint aliquid nam dolore eos, voluptate voluptatibus laudantium ut! Quis sapiente architecto, odio vel porro reprehenderit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit id dolore aspernatur? Fuga vero sequi beatae obcaecati sunt sit veritatis? Consequuntur veniam suscipit sint odit est unde quos officia iure? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nobis dolor nemo eius vitae accusamus, a, consequatur, sint provident molestias culpa iusto sunt perspiciatis sit ipsa praesentium neque inventore non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore animi, repellat quaerat unde iure minima officiis numquam, tenetur laborum, ipsa earum ad maiores recusandae quia soluta. Numquam, nam libero.
+    </p>
+  </div>
+
+  <div id="contact" class="tab-content">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="event.preventDefault(); submitForm();">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" style="width: 100%;" required></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
